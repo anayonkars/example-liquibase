@@ -7,10 +7,10 @@ logging.level:
 db1:
   datasource:
     url: jdbc:mysql://localhost:3306/db1
-    username: root
-    password: rootpass
+    username: anayonkar
+    password: anayonkar
 db2:
   datasource:
     url: jdbc:mysql://localhost:3306/db2
-    username: root
-    password: rootpass
+    username: anayonkar
+    password: anayonkar
