@@ -25,7 +25,7 @@
     </changeSet>
 
     <changeSet author="anayonkar" id="2">
-        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="account_view"/>
+        <addPrimaryKey columnNames="id" constraintName="PK_id" tableName="account_view"/>
     </changeSet>
 
 </databaseChangeLog>

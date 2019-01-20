@@ -6,11 +6,13 @@ logging.level:
   org.hibernate: INFO
 db1:
   datasource:
-    url: jdbc:mysql://localhost:3306/db1
-    username: anayonkar
-    password: anayonkar
+    url: jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
 db2:
   datasource:
-    url: jdbc:mysql://localhost:3306/db2
-    username: anayonkar
-    password: anayonkar
+    url: jdbc:h2:mem:db2;DB_CLOSE_DELAY=-1
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
