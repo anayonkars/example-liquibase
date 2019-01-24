@@ -24,13 +24,4 @@ public class DB1DataSourceConfiguration {
         return DataSourceBuilder.create().build();
     }
 
-    /*@Primary
-    @Bean(name = "db1EntityManagerFactory")
-    public LocalContainerEntityManagerFactoryBean db1EntityManagerFactory
-            (EntityManagerFactoryBuilder builder, @Qualifier("db1DataSource")
-             DataSource db1DataSource) {
-        return builder
-                .dataSource(db1DataSource)
-                .build();
-    }*/
 }

@@ -22,13 +22,4 @@ public class DB2DataSourceConfiguration {
         return DataSourceBuilder.create().build();
     }
 
-    /*@Primary
-    @Bean(name = "db2EntityManagerFactory")
-    public LocalContainerEntityManagerFactoryBean db2EntityManagerFactory
-            (EntityManagerFactoryBuilder builder, @Qualifier("db2DataSource")
-             DataSource db2DataSource) {
-        return builder
-                .dataSource(db2DataSource)
-                .build();
-    }*/
 }
