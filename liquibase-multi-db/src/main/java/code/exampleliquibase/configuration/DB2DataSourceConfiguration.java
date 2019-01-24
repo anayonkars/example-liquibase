@@ -15,9 +15,6 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableTransactionManagement
-/*@EnableJpaRepositories(
-        entityManagerFactoryRef = "db2EntityManagerFactory"
-)*/
 public class DB2DataSourceConfiguration {
     @Bean(name = "db2DataSource")
     @ConfigurationProperties(prefix = "db2.datasource")
