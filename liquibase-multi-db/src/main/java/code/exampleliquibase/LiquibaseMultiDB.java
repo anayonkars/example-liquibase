@@ -1,12 +1,15 @@
 package code.exampleliquibase;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import static org.springframework.boot.SpringApplication.run;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 
 @SpringBootApplication
 public class LiquibaseMultiDB {
     public static void main(String[] args) {
-        run(LiquibaseMultiDB.class, args);
+        new SpringApplicationBuilder()
+                .web(false)
+                .sources(LiquibaseMultiDB.class)
+                .build()
+                .run();
     }
 }
